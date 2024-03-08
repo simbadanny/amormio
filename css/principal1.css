@@ -1,0 +1,43 @@
+.carta {
+    position: fixed;
+    top: 25%;
+    right: 20px; /* Ajusta este valor para posicionar la carta en el lado derecho */
+    transform: translateY(-50%);
+    background-color: transparent; /* Hace el fondo invisible */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    z-index: 9999; /* Para asegurarse de que esté por encima de todo */
+}
+
+.carta h2, .carta p {
+    color: #fff; /* Letras de color blanco */
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+.video {
+    position: fixed;
+    top: 70%;
+    left: 15px;
+    z-index: 9998; /* Un valor menor que el de la carta para asegurarse de que esté detrás */
+}
+
+.video-izquierda {
+    width: 250px; /* Ancho del video */
+    height: auto;
+    border-radius: 10px; /* Si deseas bordes redondeados en el video */
+}
+.message {
+           position: absolute;
+           top: 60%;
+           left: 10%;
+           transform: translate(-50%, -50%);
+           background-color: rgba(0, 0, 0, 0.7); /* Color de fondo del mensaje */
+           color: #fff; /* Color del texto del mensaje */
+           padding: 10px 20px; /* Espaciado interno del mensaje */
+           border-radius: 5px; /* Borde redondeado del mensaje */
+           z-index: 9999; /* Asegura que el mensaje esté sobre el video */
+       }
